@@ -28,37 +28,35 @@ O script em Python recebe os dados de telemetria de um incidente (categoria, imp
 
 O script segue estritamente a arquitetura defensiva em 4 blocos de processamento sequencial:
 
-┌────────────────────────────────────────────────────────┐
-│  Bloco 01: Entradas & Telemetria                       │
-│  - Leitura do ID, Categoria, Nível de Impacto e Urgência│
-│  - Sanitização de strings (.upper())                   │
-└───────────────────────────┬────────────────────────────┘
-│
-▼
-┌────────────────────────────────────────────────────────┐
-│  Bloco 02: Regras de Negócio & Tabela de SLA           │
-│  - Inicialização de variáveis de estado                │
-│  - Definição dos parâmetros contratuais de resposta    │
-└───────────────────────────┬────────────────────────────┘
-│
-▼
-┌────────────────────────────────────────────────────────┐
-│  Bloco 03: Motor de Decisão (Matriz ITIL & Roteamento) │
-│  - Cálculo de Prioridade (P1 Crítica a P4 Baixa)       │
-│  - Atribuição de SLA em horas (2h, 4h, 8h ou 24h)      │
-│  - Regra de Escalonamento de Fila (N1 vs N2)          │
-└───────────────────────────┬────────────────────────────┘
-│
-▼
-┌────────────────────────────────────────────────────────┐
-│  Bloco 04: Painel de Apresentação (Ticket Card)        │
-│  - Exibição formatada do relatório de triagem no terminal│
-└────────────────────────────────────────────────────────┘
+Bloco 01: Entradas & Telemetria
+- Leitura do ID, Categoria, Nível de Impacto e Urgência
+- Sanitização de strings (.upper())
 
-Plaintext
-==================================================
+│
+▼
+
+Bloco 02: Regras de Negócio & Tabela de SLA
+- Inicialização de variáveis de estado
+- Definição dos parâmetros contratuais de resposta
+
+│
+▼
+
+Bloco 03: Motor de Decisão (Matriz ITIL & Roteamento)
+- Cálculo de Prioridade (P1 Crítica a P4 Baixa)
+- Atribuição de SLA em horas (2h, 4h, 8h ou 24h)
+- Regra de Escalonamento de Fila (N1 vs N2)
+
+│
+▼
+
+Bloco 04: Painel de Apresentação (Ticket Card)
+- Exibição formatada do relatório de triagem no terminal
+
+---
+
              FICHA DE ROTEAMENTO ITSM
-==================================================
+
 ID do Chamado   : INC-8821
 Categoria       : INFRA
 Impacto / Urg   : Nível 1 / Nível 1
@@ -66,7 +64,6 @@ Prioridade ITIL : P1 - CRÍTICA
 SLA Resolução   : 2 Horas
 Fila / Equipe   : N2 - Suporte Especializado
 Status SLA      : DENTRO_DO_PADRAO
-==================================================
 
 ---
 
@@ -94,6 +91,6 @@ Tomada de Decisão Multicritério: Combinação dos operadores lógicos and e or
 
 ## 🔗 Repositório e Links
 
-* **📂 Repositório do Projeto no GitHub:** [github.com/seu-usuario/ti-python-lab](https://github.com/seu-usuario/ti-python-lab)
-* **👤 Perfil do Desenvolvedor:** [github.com/seu-usuario](https://github.com/seu-usuario)
+* **📂 Repositório do Projeto no GitHub:** https://github.com/EduardoSantos10/Mini---Projetos-Pr-ticos-em-Python/tree/main/Triagem%20de%20Chamado%20N1%20e%20N2%20ITSM%20com%20Suporte
+* **👤 Perfil do Desenvolvedor:** https://github.com/EduardoSantos10
 * **✉️ Contato / Feedback:** Sinta-se à vontade para abrir uma *Issue* ou enviar sugestões de melhoria!
