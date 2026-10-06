@@ -92,8 +92,6 @@ Tomada de Decisão Multicritério: Combinação dos operadores lógicos and e or
 
 ---
 
----
-
 ## 🔗 Repositório e Links
 
 * **📂 Repositório do Projeto no GitHub:** [github.com/seu-usuario/ti-python-lab](https://github.com/seu-usuario/ti-python-lab)
