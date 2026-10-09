@@ -52,3 +52,15 @@ O script avalia os Golden Signals de telemetria de um servidor contra uma matriz
 │  Bloco 04: Painel NOC Output                           │
 │  - Emissão de dashboard de saúde estruturado           │
 └────────────────────────────────────────────────────────┘
+
+---
+
+## 💻 Projetos do Laboratório
+
+| # | Projeto | Domínio de TI | Conceitos Aplicados em Python | Status |
+|:-:|:---|:---|:---|:-:|
+| **01** | **Calculadora de Sub-rede e IP** | Redes / Infraestrutura | Parsing de IP, Cálculo CIDR, RFC 1918, Condicionais | ✅ Concluído |
+| **02** | **Gestor de Chamados & SLA N1/N2** | ITSM / Suporte N2 | Triagem de tickets, Priorização de SLA, Atualização de Estado | ✅ Concluído |
+| **03** | **Caixa Eletrônico & Lockout de PIN** | SecOps / Sistemas | Controle de estado, Limite de tentativas, Trava de Segurança | ✅ Concluído |
+| **04** | **Monitor de Saúde de Servidores** | SysAdmin / SRE | Avaliação de métricas de CPU/RAM, Classificação de Alertas | ✅ Concluído |
+| **05** | **Auditor de Fortitude de Senhas** | Cybersecurity | Análise estática de strings, Validação de políticas de acesso | 🔄 Em Breve |
